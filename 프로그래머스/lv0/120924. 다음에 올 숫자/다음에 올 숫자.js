@@ -4,7 +4,7 @@ function solution(common) {
         if(common[i+1] - common[i] === common[i+2] - common[i+1]){
             answer = common[common.length-1] + common[i+1] - common[i]
         } 
-        if(common[i+1]/common[i] === common[i+2]/common[i+1]){
+        else if(common[i+1]/common[i] === common[i+2]/common[i+1]){
             answer = (common[i+1]/common[i])* common[common.length-1]
         }
     }
